@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://cfrhyxgrw488v"]
+
+[ext_resource type="Script" uid="uid://b42poyb8v3beg" path="res://character_body_3d.gd" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://doix088fmrtss" path="res://casino goon.obj" id="2_noarx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_noarx"]
+sky_material = SubResource("ProceduralSkyMaterial_a202f")
+
+[sub_resource type="Environment" id="Environment_a0tk4"]
+background_mode = 2
+sky = SubResource("Sky_noarx")
+glow_enabled = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_noarx"]
+points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
+
+[node name="Node3D" type="Node3D" unique_id=351375635]
+
+[node name="MAP" type="CSGCombiner3D" parent="." unique_id=1145538247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.443657, 2.6672363, -1.7034912)
+use_collision = true
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="MAP" unique_id=455509696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.541288, -2.3523073, 25.87684)
+use_collision = true
+size = Vector3(42.27757, 0.001, 69.24014)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="MAP" unique_id=838331345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.49675, -1.2246513, 13.758566)
+size = Vector3(4.808838, 6.3344727, 18.113682)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="MAP" unique_id=955095200]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.666481, -1.2246513, -6.550928)
+size = Vector3(4.808838, 6.3344727, 41.961277)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="MAP" unique_id=2078369184]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.733625, -1.2246513, 34.79157)
+size = Vector3(4.808838, 6.3344727, 19.738453)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="MAP" unique_id=2140549132]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.364079, -1.2246513, 58.39415)
+size = Vector3(4.808838, 6.3344727, 40.727318)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="MAP" unique_id=127518213]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 26.837658, -1.2246513, 20.401745)
+size = Vector3(4.808838, 6.3344727, 27.426056)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="MAP" unique_id=1007098921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.22131, -1.2246361, 25.948467)
+size = Vector3(4.808838, 6.3344727, 69.32085)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="MAP" unique_id=1102119853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9555454, -1.2246361, 26.354275)
+size = Vector3(4.808838, 6.3344727, 67.86626)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="MAP" unique_id=1490095570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.199764, -1.2639246, 45.962193)
+size = Vector3(4.808838, 6.3344727, 26.890675)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1923344763]
+transform = Transform3D(-0.8558194, -0.44797307, 0.25863737, 2.7805946e-08, 0.49999994, 0.86602545, -0.51727474, 0.74116135, -0.42790964, -12.08787, 38.262672, 24.275026)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1394992080]
+environment = SubResource("Environment_a0tk4")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1668002744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6974516, 0, 46.73271)
+script = ExtResource("1_a202f")
+
+[node name="casino goon" parent="CharacterBody3D" unique_id=2099283216 instance=ExtResource("2_noarx")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.0098468, 3.7361174, 0)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=2011889437]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.020779938, 1.7939559, 0.15725398)
+shape = SubResource("ConvexPolygonShape3D_noarx")
+
+[node name="Head" type="Node3D" parent="CharacterBody3D" unique_id=1326652428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0871603, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" unique_id=793075138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0496094, 0)
