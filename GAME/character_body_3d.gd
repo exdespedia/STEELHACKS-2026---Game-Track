@@ -16,6 +16,7 @@ var t_bob = 0.00
 @onready var camera = $Head/Camera3D
 
 func _ready():
+	add_to_group("player")
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func _unhandled_input(event):
