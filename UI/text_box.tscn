@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bpykxkagma5qj"]
+
+[sub_resource type="GDScript" id="GDScript_a0tk4"]
+resource_name = "displayText"
+script/source = "extends CanvasLayer
+
+
+@onready var label: Label = $Panel/MarginContainer/Label
+
+func display_text(new_text: String) -> void:
+	label.text = new_text	
+	
+"
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1216327726]
+script = SubResource("GDScript_a0tk4")
+
+[node name="Panel" type="Panel" parent="." unique_id=1101590673]
+offset_left = 455.0
+offset_top = 909.0
+offset_right = 1460.0
+offset_bottom = 1045.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=1206787985]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(900, 50)
+layout_mode = 0
+offset_left = 63.0
+offset_top = 43.0
+offset_right = 950.0
+offset_bottom = 93.0
+
+[node name="Label" type="Label" parent="Panel/MarginContainer" unique_id=35576620]
+layout_mode = 2
+text = "This is a TextBox. Enter dialogue here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+uppercase = true
