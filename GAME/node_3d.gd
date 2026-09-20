@@ -14,3 +14,7 @@ func _process(delta: float) -> void:
 	
 
 		
+
+
+func start_dialogue(body: Node3D) -> void:
+	pass # Replace with function body.

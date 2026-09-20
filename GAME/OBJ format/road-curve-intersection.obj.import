@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bne8wy16vbdro"
+path="res://.godot/imported/road-curve-intersection.obj-838aabe048b0f1075e19cbc40dc3628a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-curve-intersection.obj-838aabe048b0f1075e19cbc40dc3628a.mesh"]
+
+source_file="res://OBJ format/road-curve-intersection.obj"
+dest_files=["res://.godot/imported/road-curve-intersection.obj-838aabe048b0f1075e19cbc40dc3628a.mesh", "res://.godot/imported/road-curve-intersection.obj-838aabe048b0f1075e19cbc40dc3628a.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

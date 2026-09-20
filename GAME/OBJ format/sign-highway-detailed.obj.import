@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dn6o24mk0182c"
+path="res://.godot/imported/sign-highway-detailed.obj-a955e8c4d847ff05b3a8d60e49124294.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sign-highway-detailed.obj-a955e8c4d847ff05b3a8d60e49124294.mesh"]
+
+source_file="res://OBJ format/sign-highway-detailed.obj"
+dest_files=["res://.godot/imported/sign-highway-detailed.obj-a955e8c4d847ff05b3a8d60e49124294.mesh", "res://.godot/imported/sign-highway-detailed.obj-a955e8c4d847ff05b3a8d60e49124294.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

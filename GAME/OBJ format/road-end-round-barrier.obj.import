@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bu1ghd0fal7cy"
+path="res://.godot/imported/road-end-round-barrier.obj-808b71f6fca7dceece4a454a6f6253af.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-end-round-barrier.obj-808b71f6fca7dceece4a454a6f6253af.mesh"]
+
+source_file="res://OBJ format/road-end-round-barrier.obj"
+dest_files=["res://.godot/imported/road-end-round-barrier.obj-808b71f6fca7dceece4a454a6f6253af.mesh", "res://.godot/imported/road-end-round-barrier.obj-808b71f6fca7dceece4a454a6f6253af.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

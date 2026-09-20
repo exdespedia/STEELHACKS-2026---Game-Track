@@ -1,10 +1,10 @@
 extends CharacterBody3D
 
-var speed
-const WALK_SPEED = 6.0
-const RUN_SPEED = 8.0
+var speed = 6.0
+# const WALK_SPEED = 6.0
+# const RUN_SPEED = 8.0
 const JUMP_VELOCITY = 3
-const SENSITIVITY = 0.01
+var SENSITIVITY = 0.01
 
 # Bob variables
 const BOB_FREQ = 2.0
@@ -20,10 +20,12 @@ var t_bob = 0.00
 func _ready():
 	# PLEASE WORK CUTSCENE
 	set_physics_process(false)
+	$"../AudioStreamPlayer2D".stop()
 	animation_player.play("Intro")
 	await animation_player.animation_finished
 	player_node.visible = false
 	set_physics_process(true)
+	$"../AudioStreamPlayer2D".play()
 	
 	
 	$Head/Camera3D.make_current()
@@ -43,12 +45,6 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		
-	# Sprint
-	if Input.is_action_just_pressed("sprint") and is_on_floor():
-		speed = RUN_SPEED
-	else:
-		speed = WALK_SPEED
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
