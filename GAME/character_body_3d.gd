@@ -14,9 +14,19 @@ var t_bob = 0.00
 # Init
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var animation_player = $"../AnimationPlayer"
+@onready var player_node = $"../player"
 
 func _ready():
-	add_to_group("player")
+	# PLEASE WORK CUTSCENE
+	set_physics_process(false)
+	animation_player.play("Intro")
+	await animation_player.animation_finished
+	player_node.visible = false
+	set_physics_process(true)
+	
+	
+	$Head/Camera3D.make_current()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func _unhandled_input(event):
