@@ -1,6 +1,49 @@
 [gd_scene format=3 uid="uid://cfrhyxgrw488v"]
 
 [ext_resource type="Script" uid="uid://b42poyb8v3beg" path="res://character_body_3d.gd" id="1_a202f"]
+<<<<<<< Updated upstream
+[ext_resource type="PackedScene" uid="uid://doix088fmrtss" path="res://interactables/casino goon.obj" id="2_noarx"]
+[ext_resource type="PackedScene" uid="uid://dum8f13l5p4b0" path="res://interactables/npc_test.tscn" id="3_a0tk4"]
+
+[sub_resource type="GDScript" id="GDScript_t7kgj"]
+resource_name = "Textbox"
+script/source = "extends Node3D
+const TextBox_SCENE = preload(\"res://UI/text_box.tscn\")
+@onready var collision_area: Area3D = $NPCTest/interactionArea
+var player_in_range: bool = false
+var active_textbox: CanvasLayer = null
+
+func _ready() -> void:
+	collision_area.body_entered.connect(_on_player_entered)
+	collision_area.body_exited.connect(_on_player_exited)
+
+func _process(_delta: float) -> void:
+	if player_in_range and Input.is_action_just_pressed(\"Interact\"):
+			if active_textbox !=null:
+				close_dialogue()
+			else:
+				trigger_dialogue()
+
+func _on_player_entered(body: Node3D) -> void:
+	player_in_range = true
+	print(\"Player activated dialogue.\")  #debugging purposes
+	
+func _on_player_exited(body: Node3D) -> void:
+	player_in_range = false
+	close_dialogue()
+	print(\"Player exited dialogue.\") #debugging purposes
+
+func trigger_dialogue() -> void:
+	var textBox = TextBox_SCENE.instantiate()
+	add_child(textBox)
+	textBox.display_text(\"This is example textbox dialogue.\")
+	
+func close_dialogue() -> void:
+	if active_textbox != null:
+		active_textbox.queue_free()
+		active_textbox = null
+"
+=======
 [ext_resource type="ArrayMesh" uid="uid://bawydqy8cf4es" path="res://OBJ format/building-h.obj" id="3_jsk3o"]
 [ext_resource type="PackedScene" uid="uid://bgepx8ra4j1jc" path="res://maincharacter.obj" id="4_i5arm"]
 [ext_resource type="ArrayMesh" uid="uid://cgy8u071cpmle" path="res://OBJ format/building-i.obj" id="5_6iypd"]
@@ -78,6 +121,7 @@ _data = {
 &"Intro": SubResource("Animation_tuemg"),
 &"RESET": SubResource("Animation_i0g27")
 }
+>>>>>>> Stashed changes
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -91,6 +135,57 @@ background_mode = 2
 sky = SubResource("Sky_noarx")
 glow_enabled = true
 
+<<<<<<< Updated upstream
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_noarx"]
+points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
+
+[node name="Game" type="Node3D" unique_id=351375635]
+script = SubResource("GDScript_t7kgj")
+
+[node name="MAP" type="CSGCombiner3D" parent="." unique_id=1145538247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.443657, 2.6672363, -1.7034912)
+use_collision = true
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="MAP" unique_id=455509696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.541288, -2.3523073, 25.87684)
+use_collision = true
+size = Vector3(42.27757, 0.001, 69.24014)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="MAP" unique_id=838331345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.49675, -1.2246513, 13.758566)
+size = Vector3(4.808838, 6.3344727, 18.113682)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="MAP" unique_id=955095200]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.666481, -1.2246513, -6.550928)
+size = Vector3(4.808838, 6.3344727, 41.961277)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="MAP" unique_id=2078369184]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.733625, -1.2246513, 34.79157)
+size = Vector3(4.808838, 6.3344727, 19.738453)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="MAP" unique_id=2140549132]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.364079, -1.2246513, 58.39415)
+size = Vector3(4.808838, 6.3344727, 40.727318)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="MAP" unique_id=127518213]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 26.837658, -1.2246513, 20.401745)
+size = Vector3(4.808838, 6.3344727, 27.426056)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="MAP" unique_id=1007098921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.22131, -1.2246361, 25.948467)
+size = Vector3(4.808838, 6.3344727, 69.32085)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="MAP" unique_id=1102119853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9555454, -1.2246361, 26.354275)
+size = Vector3(4.808838, 6.3344727, 67.86626)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="MAP" unique_id=1490095570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.199764, -1.2639246, 45.962193)
+size = Vector3(4.808838, 6.3344727, 26.890675)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1923344763]
+transform = Transform3D(-0.8558194, -0.44797307, 0.25863737, 2.7805946e-08, 0.49999994, 0.86602545, -0.51727474, 0.74116135, -0.42790964, -12.08787, 38.262672, 24.275026)
+=======
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tereu"]
 albedo_color = Color(0.045312412, 0.04531242, 0.04531242, 1)
 
@@ -134,11 +229,34 @@ libraries/ = SubResource("AnimationLibrary_ealrb")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1923344763]
 transform = Transform3D(0.5498195, -0.8048938, -0.22325855, 0.37622422, -1.6445282e-08, 0.92652863, -0.74575716, -0.59341884, 0.30282053, 36.056343, 70.88646, 51.91024)
 light_cull_mask = 4293918721
+>>>>>>> Stashed changes
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1394992080]
 environment = SubResource("Environment_a0tk4")
 
+<<<<<<< Updated upstream
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1668002744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6974516, 0, 46.73271)
+script = ExtResource("1_a202f")
+
+[node name="MC" parent="CharacterBody3D" unique_id=2099283216 instance=ExtResource("2_noarx")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.0098468, 3.7361174, 0)
+visible = false
+
+[node name="collisionArea" type="CollisionShape3D" parent="CharacterBody3D" unique_id=2011889437]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.026811838, 1.7407266, 0.11871719)
+shape = SubResource("ConvexPolygonShape3D_noarx")
+
+[node name="Head" type="Node3D" parent="CharacterBody3D" unique_id=1326652428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0871603, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" unique_id=793075138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0496094, 0)
+
+[node name="NPCTest" parent="." unique_id=218641583 instance=ExtResource("3_a0tk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2965393, -0.092689514, 30.944477)
+=======
 [node name="CSGBox3D2" type="CSGBox3D" parent="WorldEnvironment" unique_id=1156351029]
 transform = Transform3D(249.99998, 0, -9.094947e-13, 0, 249.99998, 0, 9.094947e-13, 0, 249.99998, -18.519194, -14.691162, 19.502235)
 visible = false
@@ -375,12 +493,9 @@ shape = SubResource("SphereShape3D_i0g27")
 transform = Transform3D(-0.0031058274, 0, 0.011591111, 0, 0.012, 0, -0.011591111, 0, -0.0031058274, 8.899971, 4.341817, 43.31006)
 platform_floor_layers = 4294967294
 script = ExtResource("17_tuemg")
-main_dialogue = Array[String](["hey its me casino guy", "heres a test battle", "heads or tails?"])
-exhausted_dialogue = Array[String](["leave me alone!"])
+main_dialogue = Array[String](["whats up guys", "casino guy here"])
+exhausted_dialogue = Array[String](["end text"])
 collision_area = NodePath("interactionArea")
-choices = Array[String](["Heads", "Tails"])
-win_dialogue = Array[String](["you beat me!?", "you're cheating!"])
-lose_dialogue = Array[String](["you lost!", "thats what you deserve!"])
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Casino guy" unique_id=179500729]
 transform = Transform3D(0.9999994, 0, -2.8014183e-06, 0, 1, 0, 2.8014183e-06, 0, 0.9999994, 101.53491, -175.23172, 14.703247)
@@ -397,13 +512,9 @@ shape = SubResource("BoxShape3D_i8lmc")
 [node name="Robber" type="CharacterBody3D" parent="." unique_id=169868776 node_paths=PackedStringArray("collision_area")]
 transform = Transform3D(0.002190539, 0, -0.010779682, 0, 0.010999999, 0, 0.010779682, 0, 0.002190539, -13.767265, 3.9167743, 26.920986)
 script = ExtResource("17_tuemg")
-main_dialogue = Array[String](["im the robber", "i rob", "beat me 3 times in coin flip to win!", "heads or tails?"])
-exhausted_dialogue = Array[String](["go fight joker now"])
+main_dialogue = Array[String](["please work", "please please plese"])
+exhausted_dialogue = Array[String](["IF U SEE THIS IT WORKED", "please write better dialogue"])
 collision_area = NodePath("interactionArea")
-choices = Array[String](["Heads", "Tails"])
-win_dialogue = Array[String](["i lost!", "nooo!"])
-lose_dialogue = Array[String](["i won!", "give me all your money!"])
-wins_amount = 3
 
 [node name="robber" parent="Robber" unique_id=1806422119 instance=ExtResource("13_wlxy5")]
 transform = Transform3D(-0.9851096, 0, -0.17192918, 0, 1.0000001, 0, 0.17192918, 0, -0.9851096, 50.87744, 0, 5.1765137)
@@ -427,14 +538,11 @@ transform = Transform3D(1.0000023, 0, 2.682209e-07, 0, 1, 0, -2.682209e-07, 0, 1
 shape = SubResource("BoxShape3D_p2pkb")
 
 [node name="Joker" type="CharacterBody3D" parent="." unique_id=2070345591 node_paths=PackedStringArray("collision_area")]
-transform = Transform3D(-0.011845635, 0, 0.0019185736, 0, 0.012, 0, -0.0019185736, 0, -0.011845635, -3.0905323, 4.3284254, -4.070691)
+transform = Transform3D(0.012, 0, 0, 0, 0.012, 0, 0, 0, 0.012, -3.0905323, 4.3284254, -4.070691)
 script = ExtResource("17_tuemg")
-main_dialogue = Array[String](["im da joker baby", "beat me 5 times in coin flip to win!", "heads or tails?"])
+main_dialogue = Array[String](["im the joker", "please give me some real dialogue"])
+exhausted_dialogue = Array[String](["positive mental attitude"])
 collision_area = NodePath("interactionArea")
-choices = Array[String](["Heads", "Tails"])
-win_dialogue = Array[String](["you beat me!", "raah!"])
-lose_dialogue = Array[String](["you lost!", "idiot!!"])
-wins_amount = 5
 
 [node name="joker" parent="Joker" unique_id=1575310492 instance=ExtResource("15_tcnuu")]
 transform = Transform3D(-1.0000002, 0, -8.742281e-08, 0, 1.0000002, 0, 8.742281e-08, 0, -1.0000002, 136.87311, -1.7654724, 15.922668)
@@ -451,8 +559,8 @@ transform = Transform3D(100.00001, 0, 0, 0, 100.00001, 0, 0, 0, 100.00001, -6.20
 shape = SubResource("BoxShape3D_bg5qr")
 
 [node name="interactionArea" type="Area3D" parent="Joker" unique_id=1371056187]
-transform = Transform3D(0.040131833, 0, -0.9991945, 0, 1, 0, 0.9991945, 0, 0.040131833, 50.220276, 0, -52.582428)
 
 [node name="interactionCollision3D" type="CollisionShape3D" parent="Joker/interactionArea" unique_id=187339519]
-transform = Transform3D(0.04013183, 0, -0.9991944, 0, 1, 0, 0.9991944, 0, 0.04013183, -20.82483, -141.54688, 76.92059)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.82483, -141.54688, 76.92059)
 shape = SubResource("BoxShape3D_3srgd")
+>>>>>>> Stashed changes
