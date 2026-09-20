@@ -3,15 +3,15 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://dkfhya06dydod"
-path="res://.godot/imported/building-g.obj-ae530ae5750d001edfe4c00795a95602.mesh"
+uid="uid://du83m1sw33ifw"
+path="res://.godot/imported/building-g.obj-6c36de1392febcaccca3076dca3b4fe9.mesh"
 
 [deps]
 
-files=["res://.godot/imported/building-g.obj-ae530ae5750d001edfe4c00795a95602.mesh"]
+files=["res://.godot/imported/building-g.obj-6c36de1392febcaccca3076dca3b4fe9.mesh"]
 
-source_file="res://building-g.obj"
-dest_files=["res://.godot/imported/building-g.obj-ae530ae5750d001edfe4c00795a95602.mesh", "res://.godot/imported/building-g.obj-ae530ae5750d001edfe4c00795a95602.mesh"]
+source_file="res://OBJ format/building-g.obj"
+dest_files=["res://.godot/imported/building-g.obj-6c36de1392febcaccca3076dca3b4fe9.mesh", "res://.godot/imported/building-g.obj-6c36de1392febcaccca3076dca3b4fe9.mesh"]
 
 [params]
 
