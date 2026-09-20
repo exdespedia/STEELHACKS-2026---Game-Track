@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7kvyui3153d0"
-path="res://.godot/imported/joker-playing-card-isolated.png-02c91e215807c25744ce44dd260333b2.ctex"
+path="res://.godot/imported/joker-playing-card-isolated.png-634b2e63bbadcce39120032b25818faf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ART/joker-playing-card-isolated.png"
-dest_files=["res://.godot/imported/joker-playing-card-isolated.png-02c91e215807c25744ce44dd260333b2.ctex"]
+source_file="res://joker-playing-card-isolated.png"
+dest_files=["res://.godot/imported/joker-playing-card-isolated.png-634b2e63bbadcce39120032b25818faf.ctex"]
 
 [params]
 
