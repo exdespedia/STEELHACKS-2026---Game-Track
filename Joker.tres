@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cccyfph4st8y6"]
+
+[ext_resource type="Texture2D" uid="uid://b7kvyui3153d0" path="res://ART/joker-playing-card-isolated.png" id="1_3g812"]
+[ext_resource type="Script" uid="uid://btk6d424ek1ga" path="res://item_data.gd" id="1_cd2gl"]
+
+[resource]
+script = ExtResource("1_cd2gl")
+item_name = "Joker"
+icon = ExtResource("1_3g812")
+metadata/_custom_type_script = "uid://btk6d424ek1ga"

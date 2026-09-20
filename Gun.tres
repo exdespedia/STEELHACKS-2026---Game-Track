@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://m4gwd21njcyf"]
+
+[ext_resource type="Texture2D" uid="uid://c261l8thxkunc" path="res://ART/chilux_mr-revolver-8312278_640.png" id="1_f8uyg"]
+[ext_resource type="Script" uid="uid://btk6d424ek1ga" path="res://item_data.gd" id="1_whi7l"]
+
+[resource]
+script = ExtResource("1_whi7l")
+item_name = "Gun"
+icon = ExtResource("1_f8uyg")
+metadata/_custom_type_script = "uid://btk6d424ek1ga"

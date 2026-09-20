@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://g7sfdnct1wg6"]
+
+[ext_resource type="Script" uid="uid://csmsfojquv6w2" path="res://inventory_toggle.gd" id="1_nojyp"]
+[ext_resource type="Script" uid="uid://1rcypfrrwkj0" path="res://inventory_panel.gd" id="2_wlbst"]
+[ext_resource type="Script" uid="uid://bc8cy12f40mje" path="res://item_slot.gd" id="3_ps5qp"]
+
+[node name="Global GUI" type="Node3D" unique_id=337840653]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1615710178]
+layer = 100
+script = ExtResource("1_nojyp")
+
+[node name="Inventory" type="Panel" parent="CanvasLayer" unique_id=619757981]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -345.0
+offset_top = -448.0
+offset_right = -232.12122
+offset_bottom = -109.71881
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(1.3199999, 1.2800003)
+script = ExtResource("2_wlbst")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Inventory" unique_id=1872890404]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Inventory/MarginContainer" unique_id=538436655]
+layout_mode = 2
+mouse_filter = 0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+
+[node name="ItemSlot" type="Panel" parent="CanvasLayer/Inventory/MarginContainer/GridContainer" unique_id=1837297024]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("3_ps5qp")
+
+[node name="ItemSlot2" type="Panel" parent="CanvasLayer/Inventory/MarginContainer/GridContainer" unique_id=187462250]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("3_ps5qp")
+
+[node name="ItemSlot3" type="Panel" parent="CanvasLayer/Inventory/MarginContainer/GridContainer" unique_id=246386439]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("3_ps5qp")
