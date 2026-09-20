@@ -10,3 +10,6 @@ An adventure game with minigame-based combat and a buttload of gambling.
 
 
 Demo Video: https://www.youtube.com/watch?v=Q-c4VWcNAlg
+
+
+Contributors: Kristina Waddy-Anderson (kbw38@pitt.edu), Lily Yakovlev (lilyayyako@gmail.com), Andrew Kunselman (akunselm@andrew.cmu.edu), Mar Newcomer (marsnewco@gmail.com)
