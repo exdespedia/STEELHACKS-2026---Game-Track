@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bpykxkagma5qj"]
+
+[ext_resource type="FontFile" uid="uid://dctsos4slsh2y" path="res://UI/Montserrat-Bold.ttf" id="1_c53gd"]
+
+[node name="text_box" type="Control" unique_id=541283825]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -36.0
+offset_right = -1.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=491038879]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=941180036]
+offset_left = 291.0
+offset_top = 866.0
+offset_right = 1609.0
+offset_bottom = 1021.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel" unique_id=772673636]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 24.0
+offset_right = 1282.0
+offset_bottom = 130.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel/MarginContainer" unique_id=206525847]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel/MarginContainer/VBoxContainer" unique_id=1756139702]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_c53gd")
+bbcode_enabled = true
+text = "i am struggling aAAA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChoicesBox" type="VBoxContainer" parent="CanvasLayer/Panel/MarginContainer/VBoxContainer" unique_id=243575373]
+layout_mode = 2
+
+[node name="Panel2" type="Panel" parent="CanvasLayer" unique_id=313190051]
+visible = false
+offset_left = 858.0
+offset_top = 758.0
+offset_right = 1057.0
+offset_bottom = 827.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel2" unique_id=888010215]
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 10.0
+offset_right = 173.0
+offset_bottom = 60.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel2/MarginContainer" unique_id=202280373]
+custom_minimum_size = Vector2(50, 50)
+custom_maximum_size = Vector2(500, -1)
+layout_mode = 2
+alignment = 1
+
+[node name="WinCounter" type="Label" parent="CanvasLayer/Panel2/MarginContainer/VBoxContainer" unique_id=1450459721]
+layout_mode = 2
+text = "1/2 "
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1193192379]
+offset_left = 892.0
+offset_top = 606.0
+offset_right = 1034.0
+offset_bottom = 736.0
+
+[node name="CoinImage" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=258492322]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5

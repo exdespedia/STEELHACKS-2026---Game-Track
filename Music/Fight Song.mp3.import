@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pnuk3cmt6o6s"
+path="res://.godot/imported/Fight Song.mp3-1eed6783cb0c3c49b35a769bc515eaf0.mp3str"
+
+[deps]
+
+source_file="res://Music/Fight Song.mp3"
+dest_files=["res://.godot/imported/Fight Song.mp3-1eed6783cb0c3c49b35a769bc515eaf0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
