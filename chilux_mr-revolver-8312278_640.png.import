@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c261l8thxkunc"
-path="res://.godot/imported/chilux_mr-revolver-8312278_640.png-7677ad7253f3553c321385f998584b60.ctex"
+path="res://.godot/imported/chilux_mr-revolver-8312278_640.png-f3d522ab2b74c3ded5791623322cfba6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ART/chilux_mr-revolver-8312278_640.png"
-dest_files=["res://.godot/imported/chilux_mr-revolver-8312278_640.png-7677ad7253f3553c321385f998584b60.ctex"]
+source_file="res://chilux_mr-revolver-8312278_640.png"
+dest_files=["res://.godot/imported/chilux_mr-revolver-8312278_640.png-f3d522ab2b74c3ded5791623322cfba6.ctex"]
 
 [params]
 

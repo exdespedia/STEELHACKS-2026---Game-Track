@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgegogrrmd4bf"
-path="res://.godot/imported/openclipart-vectors-dice-1294902_640.png-d2b4497040afa663ba9fecbdd47b558f.ctex"
+path="res://.godot/imported/openclipart-vectors-dice-1294902_640.png-73b046f997cea66de628c8d773b0309f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ART/openclipart-vectors-dice-1294902_640.png"
-dest_files=["res://.godot/imported/openclipart-vectors-dice-1294902_640.png-d2b4497040afa663ba9fecbdd47b558f.ctex"]
+source_file="res://openclipart-vectors-dice-1294902_640.png"
+dest_files=["res://.godot/imported/openclipart-vectors-dice-1294902_640.png-73b046f997cea66de628c8d773b0309f.ctex"]
 
 [params]
 

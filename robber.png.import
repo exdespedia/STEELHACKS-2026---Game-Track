@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkpx70lejvswp"
-path="res://.godot/imported/dice_PNG49.png-a82d79c0a36f4de12c7c2d2a988243c7.ctex"
+uid="uid://gqmddb47jcrg"
+path="res://.godot/imported/robber.png-4322807af027b73fb9d792fd621c09e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dice_PNG49.png"
-dest_files=["res://.godot/imported/dice_PNG49.png-a82d79c0a36f4de12c7c2d2a988243c7.ctex"]
+source_file="res://robber.png"
+dest_files=["res://.godot/imported/robber.png-4322807af027b73fb9d792fd621c09e2.ctex"]
 
 [params]
 
