@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dys43jvx7iw50"]
 
 [ext_resource type="Script" uid="uid://cp05noceyfdrf" path="res://TitleScreen.gd" id="1_nv11u"]
-[ext_resource type="FontFile" uid="uid://bghjryryupq0v" path="res://FONTS/LuckiestGuy.ttf" id="2_vrpxb"]
-[ext_resource type="Texture2D" uid="uid://dfknwd4j7axtu" path="res://ART/options_background.png" id="3_3ieni"]
-[ext_resource type="Texture2D" uid="uid://csbsru15fsl20" path="res://ART/titleborder.png" id="3_vrpxb"]
-[ext_resource type="Texture2D" uid="uid://dqcjcy23of2cc" path="res://ART/options_background2.png" id="4_74pie"]
+[ext_resource type="FontFile" uid="uid://c7w0ico4g4o46" path="res://ASSETS/FONTS/LuckiestGuy.ttf" id="2_vrpxb"]
+[ext_resource type="Texture2D" uid="uid://dfknwd4j7axtu" path="res://options_background.png" id="3_3ieni"]
+[ext_resource type="Texture2D" uid="uid://csbsru15fsl20" path="res://titleborder.png" id="3_vrpxb"]
+[ext_resource type="Texture2D" uid="uid://dqcjcy23of2cc" path="res://options_background2.png" id="4_74pie"]
 [ext_resource type="Script" uid="uid://c1oth5jg8h303" path="res://audiocontrol.gd" id="5_egm6w"]
-[ext_resource type="AudioStream" uid="uid://b0wr1i6vb5i8" path="res://MUSIC/Fight Song.mp3" id="6_bdv7g"]
+[ext_resource type="AudioStream" path="res://MUSIC/Fight Song.mp3" id="6_bdv7g"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ieni"]
 texture = ExtResource("3_vrpxb")

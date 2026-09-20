@@ -14,15 +14,27 @@ var t_bob = 0.00
 # Init
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var animation_player = $"../AnimationPlayer"
+@onready var player_node = $"../player"
 @onready var global_gui = $"../Global GUI/CanvasLayer"
 
+
 func _ready():
+	# PLEASE WORK CUTSCENE
+	set_physics_process(false)
+	$"../AudioStreamPlayer2D".stop()
+	animation_player.play("Intro")
+	await animation_player.animation_finished
+	player_node.visible = false
+	set_physics_process(true)
+	$"../AudioStreamPlayer2D".play()
+	
+	$Head/Camera3D.make_current()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func _unhandled_input(event):
 	if global_gui.inventory_open:
 		return
-
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * SENSITIVITY)
 		camera.rotate_x(-event.relative.y * SENSITIVITY)

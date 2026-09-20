@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://b8pxamc5dfuj3"]
 
 [ext_resource type="Script" uid="uid://cp05noceyfdrf" path="res://TitleScreen.gd" id="1_o58gh"]
-[ext_resource type="Texture2D" uid="uid://csbsru15fsl20" path="res://ART/titleborder.png" id="2_t2elp"]
-[ext_resource type="FontFile" uid="uid://bghjryryupq0v" path="res://FONTS/LuckiestGuy.ttf" id="3_rwxdx"]
-[ext_resource type="Texture2D" uid="uid://dfknwd4j7axtu" path="res://ART/options_background.png" id="4_yyiv7"]
-[ext_resource type="Texture2D" uid="uid://dqcjcy23of2cc" path="res://ART/options_background2.png" id="5_7q0g8"]
+[ext_resource type="Texture2D" uid="uid://csbsru15fsl20" path="res://titleborder.png" id="2_t2elp"]
+[ext_resource type="FontFile" uid="uid://c7w0ico4g4o46" path="res://ASSETS/FONTS/LuckiestGuy.ttf" id="3_rwxdx"]
+[ext_resource type="Texture2D" uid="uid://dfknwd4j7axtu" path="res://options_background.png" id="4_yyiv7"]
+[ext_resource type="Texture2D" uid="uid://dqcjcy23of2cc" path="res://options_background2.png" id="5_7q0g8"]
 [ext_resource type="Script" uid="uid://c1oth5jg8h303" path="res://audiocontrol.gd" id="6_wk046"]
-[ext_resource type="AudioStream" uid="uid://b0wr1i6vb5i8" path="res://MUSIC/Fight Song.mp3" id="7_7vjln"]
+[ext_resource type="AudioStream" uid="uid://pnuk3cmt6o6s" path="res://Music/Fight Song.mp3" id="7_jqemp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ieni"]
 texture = ExtResource("2_t2elp")
@@ -131,7 +131,7 @@ script = ExtResource("1_o58gh")
 [node name="Panel2" type="Panel" parent="." unique_id=1600112236]
 layout_mode = 0
 offset_right = 657.2613
-offset_bottom = 648.1345
+offset_bottom = 663.3632
 theme_override_styles/panel = SubResource("StyleBoxTexture_3ieni")
 
 [node name="Panel" type="Panel" parent="." unique_id=1630802871]
@@ -193,7 +193,7 @@ text = "Exit Game"
 layout_mode = 0
 offset_left = 657.2612
 offset_right = 1148.0
-offset_bottom = 648.1345
+offset_bottom = 658.49005
 theme = SubResource("Theme_tu0on")
 theme_override_styles/panel = SubResource("StyleBoxFlat_2k3je")
 
@@ -342,10 +342,9 @@ theme_override_font_sizes/font_size = 24
 text = "Master Volume:"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=320135811]
-stream = ExtResource("7_7vjln")
+stream = ExtResource("7_jqemp")
 volume_db = 1.13
 autoplay = true
-bus = &"Music"
 parameters/looping = true
 
 [connection signal="pressed" from="MainButtons/StartButton" to="." method="_on_start_button_pressed"]
