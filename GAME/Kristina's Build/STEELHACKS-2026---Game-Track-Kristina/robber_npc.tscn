@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://caxy43jra1wwh"]
+
+[ext_resource type="PackedScene" uid="uid://cf2s2ski4povt" path="res://robber.obj" id="1_y6b1n"]
+[ext_resource type="Texture2D" uid="uid://gqmddb47jcrg" path="res://robber.png" id="2_ov8xe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w7lit"]
+size = Vector3(0.6464087, 3.477234, 2.442505)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i8lmc"]
+radius = 2.1538823
+
+[node name="robberNPC" type="StaticBody3D" unique_id=492149162]
+
+[node name="interactionCollisionShap" type="CollisionShape3D" parent="." unique_id=1596113063]
+transform = Transform3D(0.9198215, 0, 0.3923371, 0, 1, 0, -0.3923371, 0, 0.9198215, -13.851335, 2.0579863, 26.36407)
+shape = SubResource("BoxShape3D_w7lit")
+
+[node name="robber" parent="." unique_id=341151748 instance=ExtResource("1_y6b1n")]
+transform = Transform3D(-0.0040112627, 0, 0.010242551, 0, 0.011, 0, -0.010242551, 0, -0.0040112627, -13.711617, 3.9167743, 27.480768)
+
+[node name="Decal" type="Decal" parent="robber" unique_id=1651342439]
+transform = Transform3D(100, 0, 0, 0, 2.9666197, -99.955986, 0, 99.955986, 2.9666197, 93.750656, -169.3638, 64.52853)
+size = Vector3(1.9453735, 0.62323, 3.3699532)
+texture_albedo = ExtResource("2_ov8xe")
+upper_fade = 0.0
+lower_fade = 0.0
+
+[node name="interactionArea" type="Area3D" parent="." unique_id=741087428]
+
+[node name="interactionCollisionShap" type="CollisionShape3D" parent="interactionArea" unique_id=495786575]
+transform = Transform3D(0.9198215, 0, 0.3923371, 0, 1, 0, -0.3923371, 0, 0.9198215, -12.726875, 2.0579863, 25.884449)
+shape = SubResource("SphereShape3D_i8lmc")

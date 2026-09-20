@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ipb6rgls52d"
+path="res://.godot/imported/road-side-barrier.obj-44a7c0b98cfab69ec4e5c8742070fd9b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-side-barrier.obj-44a7c0b98cfab69ec4e5c8742070fd9b.mesh"]
+
+source_file="res://2D ASSETS/OBJ format/road-side-barrier.obj"
+dest_files=["res://.godot/imported/road-side-barrier.obj-44a7c0b98cfab69ec4e5c8742070fd9b.mesh", "res://.godot/imported/road-side-barrier.obj-44a7c0b98cfab69ec4e5c8742070fd9b.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

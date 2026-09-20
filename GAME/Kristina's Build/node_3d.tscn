@@ -1,0 +1,500 @@
+[gd_scene format=3 uid="uid://cfrhyxgrw488v"]
+
+[ext_resource type="Script" uid="uid://b42poyb8v3beg" path="res://character_body_3d.gd" id="1_a202f"]
+[ext_resource type="AudioStream" uid="uid://bkqtmrinmydhi" path="res://Mrs Edit 1 Export 2-2.mp3" id="1_i0g27"]
+[ext_resource type="AudioStream" uid="uid://rjem4m8vvqwt" path="res://download.mp3" id="2_ealrb"]
+[ext_resource type="ArrayMesh" uid="uid://bawydqy8cf4es" path="res://OBJ format/building-h.obj" id="3_jsk3o"]
+[ext_resource type="PackedScene" uid="uid://bgepx8ra4j1jc" path="res://maincharacter.obj" id="4_i5arm"]
+[ext_resource type="ArrayMesh" uid="uid://cgy8u071cpmle" path="res://OBJ format/building-i.obj" id="5_6iypd"]
+[ext_resource type="ArrayMesh" uid="uid://babq06oisntco" path="res://OBJ format/building-b.obj" id="5_i5arm"]
+[ext_resource type="PackedScene" uid="uid://jf20j67pxot" path="res://character_body_3d.tscn" id="5_jka67"]
+[ext_resource type="Texture2D" uid="uid://ddtl5b73qe8e5" path="res://mc.png" id="5_wc5p8"]
+[ext_resource type="ArrayMesh" uid="uid://d26t4ywmvpwrl" path="res://OBJ format/building-skyscraper-a.obj" id="6_i5arm"]
+[ext_resource type="ArrayMesh" uid="uid://ci5ugq3kklaeu" path="res://OBJ format/building-j.obj" id="6_imku0"]
+[ext_resource type="ArrayMesh" uid="uid://xe8p6ihm8e1v" path="res://OBJ format/building-skyscraper-e.obj" id="6_tereu"]
+[ext_resource type="ArrayMesh" uid="uid://c4wgrko180fkh" path="res://OBJ format/building-skyscraper-c.obj" id="7_wc5p8"]
+[ext_resource type="ArrayMesh" uid="uid://b3d783nxeb7m0" path="res://2D ASSETS/OBJ format/road-straight.obj" id="11_jsnrv"]
+[ext_resource type="ArrayMesh" uid="uid://rh5e2652xe55" path="res://OBJ format/building-skyscraper-b.obj" id="11_tereu"]
+[ext_resource type="ArrayMesh" uid="uid://ctm2ttjvcpaol" path="res://2D ASSETS/OBJ format/road-square.obj" id="12_lggff"]
+[ext_resource type="PackedScene" uid="uid://cf2s2ski4povt" path="res://robber.obj" id="13_wlxy5"]
+[ext_resource type="Texture2D" uid="uid://gqmddb47jcrg" path="res://robber.png" id="14_3v7ru"]
+[ext_resource type="PackedScene" uid="uid://bg34a1et1ob1u" path="res://joker.obj" id="15_tcnuu"]
+[ext_resource type="Texture2D" uid="uid://cngbgay5ujfqf" path="res://joker.png" id="16_tuemg"]
+[ext_resource type="Script" uid="uid://x3y2hjx35ssh" path="res://UI/npcScript.gd" id="17_tuemg"]
+
+[sub_resource type="Animation" id="Animation_tuemg"]
+resource_name = "Intro"
+length = 9.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.01, 3.9333334, 3.96, 4.3, 4.883333, 4.9333334, 5.2033334, 5.766667, 5.8, 6.1000004, 6.693333, 6.7333336, 7.8433332),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-3.6877174, 41.49993, 2.2296143), Vector3(-3.6877174, 41.49993, 82.75604), Vector3(6.9939537, 5.1409225, 54.247253), Vector3(7.812557, 3.028984, 45.21747), Vector3(7.812557, 3.028984, 45.21747), Vector3(-6.98835, 1.3918991, 38.8703), Vector3(-12.5084, 2.56707, 28.248962), Vector3(-12.5084, 2.56707, 28.248962), Vector3(-5.176464, 5.3712673, 2.8717594), Vector3(-4.2830124, 3.8436203, -2.184021), Vector3(-4.2830124, 3.8436203, -2.184021), Vector3(-3.6366577, 28.58184, 68.08246), Vector3(-3.6366577, 2.122734, 68.08246)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3.9333334, 3.96, 4.3, 4.883333, 4.9333334, 5.2033334, 5.766667, 5.8, 6.1000004, 6.693333, 6.7333336, 7.8433332),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0.117930375, 0.50474745, 0.06491228), Vector3(0.11793041, 0.50474745, 0.06491228), Vector3(0.11793041, 0.50474745, 0.06491228), Vector3(-0.17825902, -0.4114636, 0.17994209), Vector3(-0.43775296, -0.41386136, 0.17225829), Vector3(-0.43775296, -0.41386136, 0.17225829), Vector3(0, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AnimationPlayer/cutscene_music")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_ealrb")
+}],
+"times": PackedFloat32Array(0.033333335)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_i0g27"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(7.1205406, 2.9448776, 43.155212)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.79510266, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ealrb"]
+_data = {
+&"Intro": SubResource("Animation_tuemg"),
+&"RESET": SubResource("Animation_i0g27")
+}
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a202f"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_noarx"]
+sky_material = SubResource("ProceduralSkyMaterial_a202f")
+
+[sub_resource type="Environment" id="Environment_a0tk4"]
+background_mode = 2
+sky = SubResource("Sky_noarx")
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tereu"]
+albedo_color = Color(0.045312412, 0.04531242, 0.04531242, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_noarx"]
+points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tuemg"]
+size = Vector3(0.6464087, 3.477234, 2.442505)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i0g27"]
+radius = 2.1538823
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_28xwl"]
+size = Vector3(218.02289, 324.46448, 49.483402)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i8lmc"]
+size = Vector3(204.57239, 329.3231, 107.16043)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6gdgn"]
+radius = 1.6704102
+height = 14.978638
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p2pkb"]
+size = Vector3(243.49763, 408.64682, 201.51482)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bg5qr"]
+size = Vector3(2.62854, 3.2210693, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3srgd"]
+size = Vector3(270.0393, 344.01395, 230.87888)
+
+[node name="SCENE" type="Node3D" unique_id=351375635]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=407976616]
+stream = ExtResource("1_i0g27")
+autoplay = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=526893275]
+transform = Transform3D(0.70021147, 0, -0.7139355, 0, 1, 0, 0.7139355, 0, 0.70021147, 7.1205406, 2.9448776, 43.155212)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2023144197]
+root_node = NodePath("../WorldEnvironment")
+libraries/ = SubResource("AnimationLibrary_ealrb")
+
+[node name="cutscene_music" type="AudioStreamPlayer2D" parent="AnimationPlayer" unique_id=1864768240]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1923344763]
+transform = Transform3D(0.5498195, -0.8048938, -0.22325855, 0.37622422, -1.6445282e-08, 0.92652863, -0.74575716, -0.59341884, 0.30282053, 36.056343, 70.88646, 51.91024)
+light_cull_mask = 4293918721
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1394992080]
+environment = SubResource("Environment_a0tk4")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="WorldEnvironment" unique_id=1156351029]
+transform = Transform3D(249.99998, 0, -9.094947e-13, 0, 249.99998, 0, 9.094947e-13, 0, 249.99998, -18.519194, -14.691162, 19.502235)
+visible = false
+use_collision = true
+size = Vector3(0.001, 0.70617676, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="WorldEnvironment" unique_id=1105367310]
+transform = Transform3D(250, 0, 0, 0, 250, 0, 0, 0, 250, 10.356628, -14.691162, 19.502235)
+visible = false
+use_collision = true
+size = Vector3(0.001, 0.70617676, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="WorldEnvironment" unique_id=1466079492]
+transform = Transform3D(-1.0927847e-05, 0, 250, 0, 250, 0, -250, 0, -1.0927847e-05, 10.356628, -14.691162, -3.723835)
+visible = false
+use_collision = true
+size = Vector3(0.001, 0.70617676, 1)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="WorldEnvironment" unique_id=299822342]
+transform = Transform3D(-1.0927847e-05, 0, 250, 0, 250, 0, -250, 0, -1.0927847e-05, 10.356628, -14.691162, 70.60896)
+visible = false
+use_collision = true
+size = Vector3(0.001, 0.70617676, 1)
+
+[node name="MAP" type="CSGCombiner3D" parent="WorldEnvironment" unique_id=1145538247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.443657, 2.6672363, -1.7034912)
+use_collision = true
+
+[node name="BuildingSkyscraperE3" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=652742855]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, -37.546272, -2.3743896, 71.395)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperE4" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1623460416]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 82.30187, -2.3743896, 107.62817)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperE5" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1262513371]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 107.69601, -2.3743896, -40.401318)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperE8" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1729786387]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 114.67611, -2.3743896, 93.33719)
+mesh = ExtResource("6_tereu")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="WorldEnvironment/MAP" unique_id=455509696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.103344, -2.292283, 40.17025)
+use_collision = true
+size = Vector3(173.71529, 0.001, 238.70213)
+material = SubResource("StandardMaterial3D_tereu")
+
+[node name="BuildingB" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1597542480]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 49.837975, -3.60742, 46.815895)
+mesh = ExtResource("5_i5arm")
+
+[node name="BuildingB2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1384613230]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, -15.495628, -3.60742, -35.26993)
+mesh = ExtResource("5_i5arm")
+
+[node name="BuildingSkyscraperA" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1935243618]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 54.620255, -2.3745651, 25.124886)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingSkyscraperA3" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1644004074]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 28.612665, -2.3745651, 107.38981)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingSkyscraperA2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1883865021]
+transform = Transform3D(-7.86805e-07, 0, -18, 0, 18, 0, 18, 0, -7.86805e-07, 84.296, -2.3745651, 44.98471)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingSkyscraperA5" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1088448979]
+transform = Transform3D(-7.86805e-07, 0, -18, 0, 18, 0, 18, 0, -7.86805e-07, 66.45008, -2.3745651, -66.02515)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingSkyscraperA4" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=815965670]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, 54.910652, -2.3745651, -39.02277)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingSkyscraperE6" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=496151634]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, -17.749504, -2.3746338, -62.852722)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperA7" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=479728520]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 9.121254, -2.3745651, -63.59268)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingH" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=336714530]
+transform = Transform3D(-7.86805e-07, 0, -18, 0, 18, 0, 18, 0, -7.86805e-07, 8.650776, -2.3745651, 22.612007)
+mesh = ExtResource("3_jsk3o")
+
+[node name="BuildingH2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=2117509377]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, 4.9581184, -2.3745651, -35.777798)
+mesh = ExtResource("3_jsk3o")
+
+[node name="BuildingSkyscraperC" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=279830956]
+transform = Transform3D(-7.86805e-07, 0, -18, 0, 18, 0, 18, 0, -7.86805e-07, 6.9235115, -2.3745651, 44.558327)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingSkyscraperC2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1382145262]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, -21.457481, -2.3745651, 19.607101)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingSkyscraperC4" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1973816357]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 93.93743, -2.3745651, -65.30585)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingI4" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=26231830]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 44.06778, -2.3743896, 133.96402)
+mesh = ExtResource("5_6iypd")
+
+[node name="BuildingSkyscraperA8" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=2080004185]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, -28.172218, -2.3745651, 129.93556)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingI6" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1051768726]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, -26.547188, -2.3743896, 101.3928)
+mesh = ExtResource("5_6iypd")
+
+[node name="BuildingSkyscraperC8" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=938689883]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, -2.6843338, -2.3745651, 70.33627)
+mesh = ExtResource("6_imku0")
+
+[node name="BuildingSkyscraperA6" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1454303667]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 72.643776, -2.3745651, 133.10239)
+mesh = ExtResource("6_i5arm")
+
+[node name="BuildingSkyscraperC3" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=513784641]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, 81.474754, -2.3745651, -39.45739)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingI" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=80397990]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 55.644897, -2.3743896, 68.69455)
+mesh = ExtResource("5_6iypd")
+
+[node name="BuildingI5" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1422668069]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 83.84445, -2.3743896, -8.644836)
+mesh = ExtResource("5_6iypd")
+
+[node name="BuildingI3" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=749342958]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 37.874084, -2.3743896, -65.16351)
+mesh = ExtResource("5_6iypd")
+
+[node name="BuildingI2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1069889688]
+transform = Transform3D(-7.86805e-07, 0, -18, 0, 18, 0, 18, 0, -7.86805e-07, 5.519211, -2.3743896, 1.3707123)
+mesh = ExtResource("5_6iypd")
+
+[node name="BuildingSkyscraperE" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=1468823042]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 0.34511566, -2.3746338, 107.11477)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperE7" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=847893320]
+transform = Transform3D(-7.86805e-07, 0, 18, 0, 18, 0, -18, 0, -7.86805e-07, 55.069023, -2.3746338, -1.2162209)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperE2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=965718960]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, 28.039892, -2.3746338, -38.28281)
+mesh = ExtResource("6_tereu")
+
+[node name="BuildingSkyscraperB" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=183846289]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, -21.579918, -2.3743896, -5.972271)
+mesh = ExtResource("11_tereu")
+
+[node name="BuildingSkyscraperB2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=2126272608]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, 83.21815, -2.3743896, 72.54036)
+mesh = ExtResource("11_tereu")
+
+[node name="BuildingSkyscraperB3" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=718481638]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, -41.585823, -2.3743896, -38.024258)
+mesh = ExtResource("11_tereu")
+
+[node name="BuildingSkyscraperC6" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=366347183]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 56.74382, -5.041626, 107.86203)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingSkyscraperC9" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=744248014]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, 13.46727, -5.041626, 132.71115)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingSkyscraperC7" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=414440690]
+transform = Transform3D(-18, 0, -1.57361e-06, 0, 18, 0, 1.57361e-06, 0, -18, 83.592865, -5.0418015, 18.141022)
+mesh = ExtResource("7_wc5p8")
+
+[node name="BuildingSkyscraperC5" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=816947579]
+transform = Transform3D(18, 0, 0, 0, 18, 0, 0, 0, 18, -20.88755, -2.3743896, 46.016655)
+mesh = ExtResource("7_wc5p8")
+
+[node name="RoadStraight" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=2138453387]
+transform = Transform3D(-3.960101e-06, 0, -27.662909, 0, 23, 0, 90.59654, 0, -1.209184e-06, 29.89626, -2.3305473, 34.38839)
+mesh = ExtResource("11_jsnrv")
+
+[node name="RoadStraight2" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=154868494]
+transform = Transform3D(90.59654, 0, 0, 0, 23, 0, 0, 0, 16.95635, 29.89626, -2.3305473, 88.23469)
+mesh = ExtResource("11_jsnrv")
+
+[node name="RoadStraight3" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=2047960158]
+transform = Transform3D(90.59654, 0, 0, 0, 23, 0, 0, 0, 16.95635, 29.89626, -2.3305473, -18.553123)
+mesh = ExtResource("11_jsnrv")
+
+[node name="RoadSquare" type="MeshInstance3D" parent="WorldEnvironment/MAP" unique_id=489143075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.88434, -2.2917824, 84.3001)
+mesh = ExtResource("12_lggff")
+
+[node name="player" type="CharacterBody3D" parent="." unique_id=1668002744 groups=["player"]]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, -4.2076855, 0.3352592, 66.220215)
+script = ExtResource("1_a202f")
+
+[node name="maincharacter" parent="player" unique_id=745185051 instance=ExtResource("4_i5arm")]
+transform = Transform3D(-0.05, 0, 4.371139e-09, 0, 0.05, 0, -4.371139e-09, 0, -0.05, 7.554534, 16.803684, -2.5549927)
+
+[node name="Decal" type="Decal" parent="player/maincharacter" unique_id=1566299466]
+transform = Transform3D(200, 0, 0, 0, 22.29379, -198.7536, 0, 198.7536, 22.29379, 112.44925, -174.48438, 0.7438965)
+size = Vector3(1.0456543, 0.8305664, 1.6838379)
+texture_albedo = ExtResource("5_wc5p8")
+upper_fade = 0.0
+lower_fade = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=2011889437]
+transform = Transform3D(-8, 0, 6.993822e-07, 0, 8, 0, -6.993822e-07, 0, -8, 2.4589806, 9.810081, -3.3758545)
+shape = SubResource("ConvexPolygonShape3D_noarx")
+
+[node name="Head" type="Node3D" parent="player" unique_id=1326652428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.890606, 11.985506, -4.3181458)
+
+[node name="Camera3D" type="Camera3D" parent="player/Head" unique_id=793075138]
+transform = Transform3D(4.347826, 0, 0, 0, 4.347826, 0, 0, 0, 4.347826, -1.4878159, 6.815628, -0.3239746)
+
+[node name="robberNPC" type="StaticBody3D" parent="player" unique_id=2107339640]
+
+[node name="interactionCollisionShap" type="CollisionShape3D" parent="player/robberNPC" unique_id=947413671]
+transform = Transform3D(0.9198215, 0, 0.3923371, 0, 1, 0, -0.3923371, 0, 0.9198215, -13.851335, 2.0579863, 26.36407)
+shape = SubResource("BoxShape3D_tuemg")
+
+[node name="robber" parent="player/robberNPC" unique_id=341151748 instance=ExtResource("13_wlxy5")]
+transform = Transform3D(-0.0040112627, 0, 0.010242551, 0, 0.011, 0, -0.010242551, 0, -0.0040112627, -13.711617, 3.9167743, 27.480768)
+
+[node name="Decal" type="Decal" parent="player/robberNPC/robber" unique_id=1489301836]
+transform = Transform3D(100, 0, 0, 0, 2.9666197, -99.955986, 0, 99.955986, 2.9666197, 93.750656, -169.3638, 64.52853)
+size = Vector3(1.9453735, 0.62323, 3.3699532)
+texture_albedo = ExtResource("14_3v7ru")
+upper_fade = 0.0
+lower_fade = 0.0
+
+[node name="interactionArea" type="Area3D" parent="player/robberNPC" unique_id=2085248063]
+
+[node name="interactionCollisionShap" type="CollisionShape3D" parent="player/robberNPC/interactionArea" unique_id=390449751]
+transform = Transform3D(0.9198215, 0, 0.3923371, 0, 1, 0, -0.3923371, 0, 0.9198215, -12.726875, 2.0579863, 25.884449)
+shape = SubResource("SphereShape3D_i0g27")
+
+[node name="Casino guy" parent="." unique_id=1404312548 node_paths=PackedStringArray("collision_area") instance=ExtResource("5_jka67")]
+transform = Transform3D(-0.0031058274, 0, 0.011591111, 0, 0.012, 0, -0.011591111, 0, -0.0031058274, 8.899971, 4.8933883, 43.31006)
+platform_floor_layers = 4294967294
+script = ExtResource("17_tuemg")
+main_dialogue = Array[String](["....Why are you looking at me like that?", "Bet you couldn't beat me in a battle of chance.", "Heads or tails?"])
+exhausted_dialogue = Array[String](["Leave me alone!"])
+collision_area = NodePath("interactionArea")
+choices = Array[String](["Heads", "Tails"])
+win_dialogue = Array[String](["You beat me!?", "You're cheating!"])
+lose_dialogue = Array[String](["You lost!", "That's what you deserve!"])
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Casino guy" unique_id=179500729]
+transform = Transform3D(0.9999994, 0, -2.8014183e-06, 0, 1, 0, 2.8014183e-06, 0, 0.9999994, 101.53491, -175.23172, 14.703247)
+shape = SubResource("BoxShape3D_28xwl")
+
+[node name="interactionArea" type="Area3D" parent="Casino guy" unique_id=72409814]
+transform = Transform3D(0.99999994, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 0.99999994, 0.012207031, 0, -0.045715332)
+collision_layer = 32768
+
+[node name="interactionCollision3D" type="CollisionShape3D" parent="Casino guy/interactionArea" unique_id=686451514]
+transform = Transform3D(1.0000013, 0, -1.3560057e-06, 0, 1, 0, 1.3560057e-06, 0, 1.0000013, 101.78589, -180.14787, -53.079895)
+shape = SubResource("BoxShape3D_i8lmc")
+
+[node name="Robber" type="CharacterBody3D" parent="." unique_id=169868776 node_paths=PackedStringArray("collision_area")]
+transform = Transform3D(0.002190539, 0, -0.010779682, 0, 0.010999999, 0, 0.010779682, 0, 0.002190539, -13.767265, 4.1628857, 26.920986)
+script = ExtResource("17_tuemg")
+main_dialogue = Array[String](["Urgh, who are you?", "I need to get out of here.", "Beat me 3 times in coin flip and I won't beat you up.", "Heads or tails?"])
+exhausted_dialogue = Array[String](["I think who you really want to fight is at the end of this road."])
+collision_area = NodePath("interactionArea")
+choices = Array[String](["Heads", "Tails"])
+win_dialogue = Array[String](["Ugh!", "How??"])
+lose_dialogue = Array[String](["I won!", "Give me your money now!"])
+wins_amount = 3
+
+[node name="robber" parent="Robber" unique_id=1806422119 instance=ExtResource("13_wlxy5")]
+transform = Transform3D(-0.9851096, 0, -0.17192918, 0, 1.0000001, 0, 0.17192918, 0, -0.9851096, 50.87744, 0, 5.1765137)
+
+[node name="Decal" type="Decal" parent="Robber/robber" unique_id=1222386414]
+transform = Transform3D(100, 0, 0, 0, 2.9666197, -99.955986, 0, 99.955986, 2.9666197, 93.750656, -169.3638, 64.52853)
+size = Vector3(1.9453735, 0.62323, 3.3699532)
+texture_albedo = ExtResource("14_3v7ru")
+upper_fade = 0.0
+lower_fade = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Robber" unique_id=421919725]
+transform = Transform3D(20, 0, -7.1525574e-07, 0, 20.000002, 0, 7.1525574e-07, 0, 20, 3.83667, -164.06622, -0.47595215)
+shape = SubResource("CapsuleShape3D_6gdgn")
+
+[node name="interactionArea" type="Area3D" parent="Robber" unique_id=1515358512]
+collision_layer = 32768
+
+[node name="interactionCollision3D" type="CollisionShape3D" parent="Robber/interactionArea" unique_id=721232209]
+transform = Transform3D(1.0000023, 0, 2.682209e-07, 0, 1, 0, -2.682209e-07, 0, 1.0000023, -36.261475, -149.37091, -123.934814)
+shape = SubResource("BoxShape3D_p2pkb")
+
+[node name="Joker" type="CharacterBody3D" parent="." unique_id=2070345591 node_paths=PackedStringArray("collision_area")]
+transform = Transform3D(-0.011845635, 0, 0.0019185736, 0, 0.012, 0, -0.0019185736, 0, -0.011845635, -3.0905323, 4.628042, -4.070691)
+script = ExtResource("17_tuemg")
+main_dialogue = Array[String](["I'm da joker baby!", "You're here to fight me aren't you?", "All you have to do is win a coin flip five times!", "Heads or tails?"])
+exhausted_dialogue = Array[String](["What...."])
+collision_area = NodePath("interactionArea")
+choices = Array[String](["Heads", "Tails"])
+win_dialogue = Array[String](["You beat me!", "Raah!"])
+lose_dialogue = Array[String](["you lost!", "idiot!!"])
+wins_amount = 5
+
+[node name="joker" parent="Joker" unique_id=1575310492 instance=ExtResource("15_tcnuu")]
+transform = Transform3D(-1.0000002, 0, -8.742281e-08, 0, 1.0000002, 0, 8.742281e-08, 0, -1.0000002, 136.87311, -1.7654724, 15.922668)
+
+[node name="Decal" type="Decal" parent="Joker/joker" unique_id=2119443270]
+transform = Transform3D(100, 0, 0, 0, -3.315513, -99.94502, 0, 99.94502, -3.315513, 154.13792, -171.06375, 44.905323)
+size = Vector3(3.0128403, 0.36315918, 3.3812103)
+texture_albedo = ExtResource("16_tuemg")
+upper_fade = 0.0
+lower_fade = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Joker" unique_id=1314845313]
+transform = Transform3D(100.00001, 0, 0, 0, 100.00001, 0, 0, 0, 100.00001, -6.2081604, -160.5021, -0.69143677)
+shape = SubResource("BoxShape3D_bg5qr")
+
+[node name="interactionArea" type="Area3D" parent="Joker" unique_id=1371056187]
+transform = Transform3D(0.040131833, 0, -0.9991945, 0, 1, 0, 0.9991945, 0, 0.040131833, 50.220276, 0, -52.582428)
+
+[node name="interactionCollision3D" type="CollisionShape3D" parent="Joker/interactionArea" unique_id=187339519]
+transform = Transform3D(0.04013183, 0, -0.9991944, 0, 1, 0, 0.9991944, 0, 0.04013183, -20.82483, -141.54688, 76.92059)
+shape = SubResource("BoxShape3D_3srgd")

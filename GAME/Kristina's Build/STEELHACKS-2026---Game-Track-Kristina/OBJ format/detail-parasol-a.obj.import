@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c26nrp37h8730"
+path="res://.godot/imported/detail-parasol-a.obj-96e43af1440f1194d335df7989534548.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail-parasol-a.obj-96e43af1440f1194d335df7989534548.mesh"]
+
+source_file="res://OBJ format/detail-parasol-a.obj"
+dest_files=["res://.godot/imported/detail-parasol-a.obj-96e43af1440f1194d335df7989534548.mesh", "res://.godot/imported/detail-parasol-a.obj-96e43af1440f1194d335df7989534548.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

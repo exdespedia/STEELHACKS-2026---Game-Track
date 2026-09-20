@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3ll7nbrj1gue"
+path="res://.godot/imported/road-end-round.obj-232beb27b268b3d1844a1778f382f4d8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-end-round.obj-232beb27b268b3d1844a1778f382f4d8.mesh"]
+
+source_file="res://2D ASSETS/OBJ format/road-end-round.obj"
+dest_files=["res://.godot/imported/road-end-round.obj-232beb27b268b3d1844a1778f382f4d8.mesh", "res://.godot/imported/road-end-round.obj-232beb27b268b3d1844a1778f382f4d8.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
