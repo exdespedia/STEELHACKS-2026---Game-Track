@@ -14,10 +14,6 @@ var t_bob = 0.00
 # Init
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
-<<<<<<< Updated upstream
-
-func _ready():
-=======
 @onready var animation_player = $"../AnimationPlayer"
 @onready var player_node = $"../player"
 
@@ -31,7 +27,6 @@ func _ready():
 	
 	
 	$Head/Camera3D.make_current()
->>>>>>> Stashed changes
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func _unhandled_input(event):
