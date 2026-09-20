@@ -7,3 +7,6 @@ Following the sudden death of all the superheroes in the world, one college drop
 
 
 An adventure game with minigame-based combat and a buttload of gambling.
+
+
+Demo Video: https://www.youtube.com/watch?v=Q-c4VWcNAlg
