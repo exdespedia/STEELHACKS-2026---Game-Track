@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bpykxkagma5qj"]
 
+<<<<<<< Updated upstream
 [sub_resource type="GDScript" id="GDScript_a0tk4"]
 resource_name = "displayText"
 script/source = "extends CanvasLayer
@@ -38,3 +39,38 @@ vertical_alignment = 1
 autowrap_mode = 3
 text_overrun_behavior = 2
 uppercase = true
+=======
+[node name="text_box" type="Control" unique_id=541283825]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=491038879]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=941180036]
+offset_left = 291.0
+offset_top = 866.0
+offset_right = 1609.0
+offset_bottom = 1021.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel" unique_id=772673636]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 24.0
+offset_right = 1282.0
+offset_bottom = 130.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel/MarginContainer" unique_id=206525847]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel/MarginContainer/VBoxContainer" unique_id=1756139702]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+bbcode_enabled = true
+text = "i am struggling aAAA"
+horizontal_alignment = 1
+vertical_alignment = 1
+>>>>>>> Stashed changes

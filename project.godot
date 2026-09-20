@@ -67,9 +67,13 @@ Interact={
 
 [layer_names]
 
+<<<<<<< Updated upstream
 3d_physics/layer_1="Player"
 3d_physics/layer_2="Interactables"
 3d_physics/layer_16="interactionLayer"
+=======
+3d_physics/layer_16="INTERACTION"
+>>>>>>> Stashed changes
 
 [physics]
 
